@@ -1,3 +1,4 @@
+# API test response with a single page of results
 api_data_single_page = {
     'page': 1,
     'numPages': 1,
@@ -20,6 +21,7 @@ api_data_single_page = {
     ]
 }
 
+# API test response for the first page in a multi-results response
 api_data_page_1 = {
     'page': 1,
     'numPages': 2,
@@ -42,6 +44,7 @@ api_data_page_1 = {
     ]
 }
 
+# API test response for the second page in a multi-results response
 api_data_page_2 = {
     'page': 2,
     'numPages': 2,
@@ -64,6 +67,7 @@ api_data_page_2 = {
     ]
 }
 
+# Expected recordings data when processing the multi-page response
 api_expected_data_multi_page = [
     {
         'id': '257429',
@@ -97,6 +101,7 @@ api_expected_data_multi_page = [
     }
 ]
 
+# Expected recordings data when processing the single page response
 api_expected_data_single_page = [
     {
         'id': '257429',
@@ -115,6 +120,7 @@ api_expected_data_single_page = [
     }
 ]
 
+# API test response for empty results
 api_data_empty_response = {
     'numRecordings': '0',
     'numSpecies': '0',
@@ -123,6 +129,7 @@ api_data_empty_response = {
     'recordings': []
 }
 
+# Expected recording counts after processing a multi-page response
 expected_recordings_by_type = {
     'song': 2,
     'call': 2,
@@ -130,6 +137,8 @@ expected_recordings_by_type = {
     'subsong': 1
 }
 
+# Expected recordings after processing a multi-page response and filtering recordings
+# whose length is greater than one minute
 expected_recordings = [
     {
         'id': '257430',

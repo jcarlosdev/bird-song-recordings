@@ -1,3 +1,5 @@
+# This file is used to test functions execution
+
 import config
 import recordings
 
